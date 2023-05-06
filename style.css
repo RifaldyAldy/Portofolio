@@ -1,0 +1,10 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: rgb(47, 0, 255);
+}
+footer {
+  height: 40px;
+}
+#Contact {
+  border-style: double;
+}
