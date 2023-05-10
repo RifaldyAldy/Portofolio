@@ -5,18 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        background-color: blueviolet;
+      }
+      .tahun-ajaran {
+        background-color: aqua;
+      }
+      .body-tabel {
+        background-color: rgb(97, 97, 114);
+        color: white;
+      }
+      .tabel {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
-    <table style="border: 2px solid black; border-collapse: collapse">
+    <table class="tabel" style="border: 2px solid black; border-collapse: collapse">
       <thead>
-        <tr>
+        <tr class="tahun-ajaran">
+          <th colspan="4" style="border: 1px solid black; padding: 8px">Tahun Ajaran 2022-2023</th>
+        </tr>
+        <tr class="body-tabel">
           <th style="border: 1px solid black; padding: 8px">Nama</th>
           <th style="border: 1px solid black; padding: 8px">Nim</th>
           <th style="border: 1px solid black; padding: 8px">Alamat</th>
           <th style="border: 1px solid black; padding: 8px">Jurusan</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="body-tabel">
         <tr>
           <td style="border: 1px solid black; padding: 8px">Nur Rahmadana</td>
           <td style="border: 1px solid black; padding: 8px">220121057</td>
