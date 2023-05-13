@@ -8,3 +8,23 @@ footer {
 #Contact {
   border-style: double;
 }
+.Carousel-section {
+  background-color: blueviolet;
+  /* padding-bottom: 20%; */
+}
+.br {
+  background-color: blueviolet;
+}
+.carousel-item img {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  padding-bottom: 50px;
+}
+.carousel-caption,
+h2,
+p {
+  color: black;
+}
