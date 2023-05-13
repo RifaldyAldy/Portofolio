@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database Movie search</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Logo -->
+      <div class="logo">
+        <div class="container">
+          <p><span>R</span>Movie</p>
+        </div>
+      </div>
+      <!-- Akhir Logo -->
+      <!-- Pencarian Movie -->
+      <div class="search-container">
+        <div class="search-element">
+          <h3>Search Movie:</h3>
+          <input onkeyup="findMovies()" type="text" class="form-control" placeholder="Title Movie ..." id="movie-search-box" tabindex="0" />
+
+          <div class="search-list" id="search-list">
+            <!-- list here -->
+            <!-- <div class="search-list-item">
+              <div class="search-item-thumbnail">
+                <img src="https://m.media-amazon.com/images/M/MV5BZmI1ZGRhNDYtOGVjZC00MmUyLThlNTktMTQyZGE3MzE1ZTdlXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg" alt="" srcset="" />
+              </div>
+              <div class="search-item-info">
+                <h3>Resident Evil</h3>
+                <p>2012</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- akhir pencarian Movie -->
+
+      <!-- Hasil container -->
+      <div class="container">
+        <div class="result-container">
+          <div class="result-grid" id="result-grid">
+            <!-- Info tentang Movie -->
+            <div class="movie-poster">
+              <img src="https://m.media-amazon.com/images/M/MV5BYTIxNjk3YjItYmYzMC00ZTdmLTk0NGUtZmNlZTA0NWFkZDMwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg" alt="" srcset="" />
+            </div>
+            <div class="movie-info">
+              <h3 class="movie-title">Demon Slayer: Kimetsu no Yaiba</h3>
+              <ul class="movie-misc-info">
+                <li class="year">Tahun: 2019–</li>
+                <li class="rated">Peringkat: TV-MA</li>
+                <li class="released">Rilis: 22 Jan 2021</li>
+              </ul>
+              <p class="genre"><b>Genre:</b> Animation, Action, Adventure</p>
+              <p class="writer"><b>Penulis:</b> N/A</p>
+              <p class="actors"><b>Aktor:</b> Natsuki Hanae, Zach Aguilar, Yoshitsugu Matsuoka</p>
+              <p class="plot">
+                <b>Plot:</b>
+                A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.
+              </p>
+
+              <p class="language"><b>Bahasa:</b> Japanese</p>
+              <p class="awards">
+                <b><i class="fas fa-award"></i> 18 wins &amp; 24 nominations</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
