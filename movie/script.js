@@ -61,6 +61,7 @@ function getResultMovies() {
     element.addEventListener('click', async () => {
       searchList.classList.add('hide-search-list');
       searchBox.value = '';
+      searchList.innerHTML = '';
       if (element.dataset.id) {
         const result = await fetch(`https://www.omdbapi.com/?i=${element.dataset.id}&apikey=97b96b4d`);
         const data = await result.json();
